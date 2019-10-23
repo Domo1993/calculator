@@ -1,0 +1,40 @@
+table {
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px grey;
+	padding: 5px;
+	background-color: #525a61;
+}
+
+input {
+	font-size:4vh;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#result {
+	padding:2px;
+	font-family: 'Allerta Stencil';
+	max-width: 98%;
+	background-color: #9fde9e;
+}
+
+.numbers {
+	background-color: black;
+	color: white;
+	border-color: #2d2d2e;
+	box-shadow: 1px 1px 1px grey;
+}
+
+.signs {
+	border-color: #2d2d2e;
+	box-shadow: 1px 1px 1px grey;
+}
+
+td {
+	width:80px;
+}
+
+* {
+	outline: none;
+}

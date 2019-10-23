@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Importing a specific font -->
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <!-- Importing CSS -->
+    <link rel="stylesheet" type="text/css" href="calculatorStyles.css">
+    <!-- Just an image next to the tab title -->
+    <link rel="shortcut icon" href="calculator.png" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>My calculator</h1>
+    <div class="title"></div>
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="result" readonly /></td>
+            <!-- clicking AC (all clear) will call allClear function to clear all values -->
+            <td><input class="signs" type="button" value="AC" onclick="allClear()" /> </td>
+        </tr>
+        <tr>
+            <!-- Clicking on the inputs below will call the display() function which will display the values inputted by the user on the display input field -->
+            <td><input class="signs" type="button" value="(" onclick="display('(')" /> </td>
+            <td><input class="signs" type="button" value=")" onclick="display(')')" /> </td>
+            <!-- Below is the square root input -->
+            <td><input class="signs" type="button" value="√" onclick="display('**(1/2)')" /> </td>
+            <!-- Below is the square input -->
+            <td><input class="signs" type="button" value="x²" onclick="display('**2')" /> </td>
+        </tr>
+        <tr>
+            <td><input class="numbers" type="button" value="7" onclick="display('7')" /> </td>
+            <td><input class="numbers" type="button" value="8" onclick="display('8')" /> </td>
+            <td><input class="numbers" type="button" value="9" onclick="display('9')" /> </td>
+            <td><input class="signs" type="button" value="/" onclick="display('/')" /> </td>
+        </tr>
+        <tr>
+            <td><input class="numbers" type="button" value="4" onclick="display('4')" /> </td>
+            <td><input class="numbers" type="button" value="5" onclick="display('5')" /> </td>
+            <td><input class="numbers" type="button" value="6" onclick="display('6')" /> </td>
+            <td><input class="signs" type="button" value="-" onclick="display('-')" /> </td>
+        </tr>
+        <tr>
+            <td><input class="numbers" type="button" value="1" onclick="display('1')" /> </td>
+            <td><input class="numbers" type="button" value="2" onclick="display('2')" /> </td>
+            <td><input class="numbers" type="button" value="3" onclick="display('3')" /> </td>
+            <td><input class="signs" type="button" value="+" onclick="display('+')" /> </td>
+        </tr>
+        <tr>
+            <td><input class="numbers" type="button" value="." onclick="display('.')" /> </td>
+            <td><input class="numbers" type="button" value="0" onclick="display('0')" /> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input class="numbers" type="button" value="=" onclick="solve()" /> </td>
+            <td><input class="signs" type="button" value="x" onclick="display('*')" /> </td>
+        </tr>
+    </table>
+    <!-- Linking an external Javascript file to this HTML document. -->
+    <script type="text/javascript" src="calculatorFunctions.js"></script>
+</body>
+
+</html>
